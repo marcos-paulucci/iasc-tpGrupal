@@ -67,7 +67,8 @@ var redirect = function(server, req, res){
         serverDown(server, "Error when proxying. Error msg: " + err);
         i = (i + 1) % servers.length;
         server = servers[i];
-        searchAndRedirect(server, req, res);
+        if (req.method == 'GET')
+            searchAndRedirect(server, req, res);
     });
 };
 
@@ -86,7 +87,8 @@ var searchAndRedirect = function(server, req, res){
         //console.log("server with port " + server.port +  " is down... Error msg: " + err);
         i = (i + 1) % servers.length;
         server = servers[i];
-        searchAndRedirect(server, req, res);
+        if (req.method == 'GET')
+            searchAndRedirect(server, req, res);
     });
 };
 
