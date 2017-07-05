@@ -1,0 +1,29 @@
+{
+  "name": "iasc-tpGrupal",
+  "version": "0.0.1",
+  "description": "",
+  "main": "load-balancer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcos287900/iasc-tpGrupal.git"
+  },
+  "keywords": [
+    "iasc",
+    "tp",
+    "grupal"
+  ],
+  "author": "Marcos",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/marcos287900/iasc-tpGrupal/issues"
+  },
+  "dependencies": {
+    "http": "0.0.0",
+    "http-proxy": "~1.16.2",
+    "seaport": "~2.0.9",
+    "es6-promise": "~3.1.2"
+  }
+}
